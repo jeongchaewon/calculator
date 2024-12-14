@@ -72,5 +72,6 @@ static void reallocate(Stack * stack)
 	memcpy(tmp, stack->contents, stack->size);
 	free(stack->contents);
 	stack->contents = tmp;
+	printf("Stack current size: %d\n", stack->size); // 추가 : 정채원 201912461
 }
 
